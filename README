@@ -1,0 +1,17 @@
+# sfDbDesignerPlugin #
+
+The *sfDbDesignerPlugin* is a symfony plugin for converting DBDesigner 
+or DBDesigner-Fork model files into the doctrine schema file. So you can 
+easily migrate your graphical model into the schema file.
+
+# Installation #
+
+* Install the plugin 
+
+        php symfony plugin:install sfDbDesignerPlugin --release=0.0.1
+
+# Use task #
+
+* Call the task with DBDesigner model
+        
+        php symfony dbdesigner:convert-doctrine doc/database.xml
