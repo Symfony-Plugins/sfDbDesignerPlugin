@@ -286,6 +286,7 @@ doctrine.
       <xsl:when test="$type = 'GEOMETRY'">BLOB</xsl:when> 
       <xsl:when test="$type = 'INT'">INTEGER</xsl:when>
       <xsl:when test="$type = 'VARCHAR'">STRING</xsl:when>
+      <xsl:when test="$type = 'DATETIME'">TIMESTAMP</xsl:when>
       <xsl:otherwise> 
         <xsl:value-of select="$type"/>
       </xsl:otherwise> 
